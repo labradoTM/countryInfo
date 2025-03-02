@@ -1,0 +1,14 @@
+.center {
+margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+}
+.form-row {
+    float: left;
+    clear: left;
+}
+.button-style {
+    margin-top: 10px;
+    padding-top: 10px;
+}

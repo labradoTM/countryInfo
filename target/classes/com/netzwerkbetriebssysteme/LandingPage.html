@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+    <meta charset="utf-8" />
+    <title>Covid Tracker</title>
+    <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Stylesheet" />
+    <link rel="stylesheet" href="classes.css" type="text/css" media="screen" title="Stylesheet" />
+</head>
+<body>
+    <form wicket:id="form">
+        <div class="center">
+            <div class="form-row center">
+                <h1>Country Information</h1>
+            </div>
+            <div class="form-row">
+                <p>Country name in English</p>
+            </div>
+            <div class="form-row">
+                <input type="text" wicket:id="eingabe1"/>
+            </div>
+            <div class="form-row">
+                <button wicket:id="acceptButton">Bestätigen</button>
+            </div>
+            <div class="form-row">
+                <label wicket:id="output"/>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
