@@ -2,7 +2,7 @@
 <html xmlns:wicket="http://wicket.apache.org">
 <head>
     <meta charset="utf-8" />
-    <title>Covid Tracker</title>
+    <title>Country Information</title>
     <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Stylesheet" />
     <link rel="stylesheet" href="classes.css" type="text/css" media="screen" title="Stylesheet" />
@@ -20,10 +20,25 @@
                 <input type="text" wicket:id="eingabe1"/>
             </div>
             <div class="form-row">
+                <p>Raw Response</p>
+            </div>
+            <div class="form-row">
+                <input type="checkbox" wicket:id="rawInput"/>
+            </div>
+            <div  style="margin-top: 20px;" class="form-row"></div>
+            <div  style="margin-top: 20px;" class="form-row">
                 <button wicket:id="acceptButton">Bestätigen</button>
             </div>
             <div class="form-row">
                 <label wicket:id="output"/>
+            </div>
+            <div wicket:id="tableContainer" style="margin-top: 20px;" class="form-row">
+                <table class="dataview" wicket:id="table">
+                    <tr>
+                        <th><div wicket:id="title"></div></th>
+                        <th><div wicket:id="content"></div></th>
+                    </tr>
+                </table>
             </div>
         </div>
     </form>
